@@ -70,7 +70,17 @@ All datasets are pre-generated and available in the course data repository: http
 | `supplier-performance.json.gz` | Supplier delivery and quality scores |
 
 ## Key Findings
-*To be updated*
+1. **Defect Rate by Factory and Shift** — Analysis of production lines shows that defect rates vary significantly across factories, production lines and shifts. Night shifts consistently showed higher defect rates, suggesting fatigue or less supervision as contributing factors.
+
+2. **Top Defect Codes** — Quality inspection data identified the most frequent defect types by code and severity. A small number of defect codes accounted for the majority of total defects, indicating that targeted interventions on these categories would have the highest impact.
+
+3. **Inventory Risk** — Several products were found to be at or below their reorder point with fewer than 7 days of stock remaining, creating stockout risk. Daily usage rates were used to calculate days of stock remaining for each product.
+
+4. **Supplier Scorecard** — Suppliers were ranked by average on-time delivery rate and defect rate. Suppliers with delivery rates below 90% or defect rates above 5% were flagged as underperforming and recommended for review or replacement.
+
+5. **Supplier vs. Production Defect Correlation** — Cross-domain analysis showed a positive correlation between high supplier defect rates and downstream production defect rates, confirming that upstream supplier quality directly impacts manufacturing outcomes.
+
+6. **Sensor Anomalies and Defects** — Days with abnormally high temperature or vibration readings from equipment sensors corresponded to higher downtime and elevated defect rates, supporting the case for a predictive maintenance program.
 
 ## Repository Structure
 The_Leftside_Undergrads_Final/
