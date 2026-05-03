@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
-KAFKA_BROKER = "broker:29092"
+KAFKA_BROKER = "kafka:9092"
 KAFKA_TOPIC = "machine-telemetry"
 
 default_args = {
@@ -16,7 +16,7 @@ def check_kafka_topic(**context):
     import subprocess
     result = subprocess.run(
         [
-            "docker", "exec", "broker",
+            "docker", "exec", "kafka",
             "kafka-topics", "--bootstrap-server", KAFKA_BROKER,
             "--describe", "--topic", KAFKA_TOPIC,
         ],
