@@ -17,6 +17,7 @@ Our pipeline is built on four layers:
 2. **Transform** (Stage 2) — PySpark batch processing to clean, join, and aggregate data
 3. **Stream** (Stage 3) — Kafka + Spark Structured Streaming for real-time machine telemetry
 4. **Orchestrate** (Stage 4) — Airflow DAGs for scheduling, quality gates, and monitoring
+See Architecture Diagram: https://github.com/aishanomani/The_Leftside_Undergrads_Final/blob/main/report/architecture-diagram.png
 
 ### Steps
 1. Clone the repository:
@@ -81,26 +82,3 @@ All datasets are pre-generated and available in the course data repository: http
 5. **Supplier vs. Production Defect Correlation** — Cross-domain analysis showed a positive correlation between high supplier defect rates and downstream production defect rates, confirming that upstream supplier quality directly impacts manufacturing outcomes.
 
 6. **Sensor Anomalies and Defects** — Days with abnormally high temperature or vibration readings from equipment sensors corresponded to higher downtime and elevated defect rates, supporting the case for a predictive maintenance program.
-
-## Repository Structure
-The_Leftside_Undergrads_Final/
-├── README.md
-├── docker-compose.yml
-├── hadoop.env
-├── data/
-│   └── raw/                        
-├── notebooks/
-│   ├── 01-data-lake-setup.ipynb
-│   ├── 02-spark-transforms.ipynb
-│   ├── 03-streaming-pipeline.ipynb
-│   └── 04-exploration.ipynb
-├── dags/
-│   ├── batch_pipeline.py
-│   └── streaming_monitor.py
-├── producers/
-│   └── event_producer.py
-├── report/
-│   ├── final-report.pdf
-│   └── architecture-diagram.png
-└── presentation/
-└── slides.pdf
