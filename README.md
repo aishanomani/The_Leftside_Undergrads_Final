@@ -17,6 +17,7 @@ Our pipeline is built on four layers:
 2. **Transform** (Stage 2) — PySpark batch processing to clean, join, and aggregate data
 3. **Stream** (Stage 3) — Kafka + Spark Structured Streaming for real-time machine telemetry
 4. **Orchestrate** (Stage 4) — Airflow DAGs for scheduling, quality gates, and monitoring
+5. 
 See Architecture Diagram: https://github.com/aishanomani/The_Leftside_Undergrads_Final/blob/main/report/architecture-diagram.png
 
 ### Steps
